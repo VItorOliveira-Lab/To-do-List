@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    text-align: center;
+    margin-top: 100px;
+    background-color: rgb(92, 86, 86);
+    padding: 0 4%;
+}
+
+body h1 {
+    background-color: gray;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 3px 4px 10px gray;
+    color: white;
+    border-radius: 8px;
+}
+
+.container  {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.inputs input,
+.inputs button {
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.inputs input {
+    width: 70%;
+    padding-left: 10px;
+    border: 0;
+    border-bottom: 1px solid rgb(85, 85, 85);
+    font-size: 17px;
+}
+
+.inputs input:hover {
+    border-bottom: 1px solid black;
+}
+
+.inputs button {
+    width: 20%;
+    border: 0;
+    background-color: rgba(128, 128, 128, 0.474);
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 30px;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
+.inputs button:hover {
+    background-color: gray;
+    color: white;
+    letter-spacing: 1px;
+} 
+
+.container-task {
+    list-style: none;
+    margin-top: 60px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    box-shadow: 3px 4px 10px gray;
+    padding: 20px 15px;
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.task-item p {
+    font-size: 18px;
+}
+
+.buttons button:first-child {
+    margin: 0 20px;
+    color: green;
+}
+
+.buttons button {
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    background-color: transparent;
+}
+
+.task-item:hover .buttons button {
+    opacity: 1;
+}
+
+.buttons button:last-child {
+    color: red;
+}
+
+.container #clear {
+    margin-top: 25px;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.container #clear:hover {
+    background-color: gray;
+    letter-spacing: 3px;
+}
+
+.concluded {
+    background-color: rgba(51, 208, 51, 0.5);
+    text-decoration: line-through;
+}
+
+.inner {
+    margin-top: 20px;
+    color: red;
+    font-weight: bolder;
+    font-size: 21px;
+}
